@@ -1,0 +1,107 @@
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+    background-color: black;
+}
+
+
+header {
+    background-color: black; 
+    color: #0a0; 
+    padding: 10px 0;
+    text-align: center; 
+}
+
+
+nav ul {
+    list-style: none; 
+}
+
+nav ul li {
+    display: inline; 
+    margin: 0 10px; 
+}
+
+nav ul li a {
+    color: #0a0; 
+    text-decoration: none; 
+}
+
+
+section#about {
+    width: 80%;
+    max-width: 800px; 
+    height: auto; 
+    padding: 40px; 
+    background-color: #000;
+    color: #0a0; 
+    text-align: center; 
+    flex: 1; 
+    
+
+    border: 2px solid #0a0; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(15, 15, 15, 0.1); 
+
+ 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+
+h1, h3 {
+    color: #0a0;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: justify; 
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: justify; 
+    text-decoration: underline;
+    position: relative;
+}
+
+h3::before {
+    content: "•"; 
+    position: absolute; 
+    left: -20px; 
+}
+
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify; 
+}
+
+h5::before {
+    content: "- "; 
+}
+
+
+footer {
+    background-color: black;
+    color: #0a0;
+    padding: 10px 0; 
+    text-align: center; 
+    margin-top: auto;
+}
