@@ -1,0 +1,89 @@
+#header{
+    width: 100%;
+    height: 100px;
+    color:rgb(92, 9, 9);
+    text-align: center;
+}
+
+#loginHeader{
+    display: flex;
+    flex-direction: column;
+    height: 370px;
+    width: 300px;
+    border: 2px solid #420D09;
+    align-items: center;
+    margin: auto;
+    background-color: #c2170765;
+    box-shadow: inset -5px -5px #B80F0A;
+    border-radius: 25px;
+}
+
+#loginHeader h1 {
+ color: rgb(53, 1, 1);
+font-family: 'Syne Mono', monospace;
+cursor: pointer;
+border: 2px solid black;
+border-top: transparent;
+border-left: transparent;
+border-right: transparent;
+}
+
+
+#mainDesign{
+    background-image: url("../images/ParanoidLogin.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#myh1{
+    background-color:rgb(92, 9, 9)1;
+    background-image: linear-gradient(to top, black 0%, rgb(192, 11, 11) 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 55px;
+    font-family: 'Syne Mono', monospace;  
+    height: 100px;  
+    padding-top: 3px;
+}
+
+
+#username{
+    border-style: solid;
+    background-color: transparent;
+    border-radius: 101px;
+    border-color: black;
+    font-size: 20px;
+}
+#password{
+    border-style: solid;
+    background-color: transparent;
+    border-radius: 101px;
+    border-color: black;
+    font-size: 20px;
+    margin-bottom: 25px;
+
+}
+#login{
+    border-style: solid;
+    background-color: transparent;
+    border-radius: 101px;
+    border-color: black;
+    font-size: 25px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#signinBtn{
+    border-style: solid;
+    background-color: transparent;
+    border-radius: 101px;
+    border-color: black;
+    font-size: 20px;
+    cursor: pointer;
+}

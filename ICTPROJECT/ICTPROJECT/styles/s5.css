@@ -1,0 +1,326 @@
+body {
+    background-image: url(/ICTPROJECT/images/emptyblackpeppegashy.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+:root {
+    --darkgray: #212329;
+    --brightred: #B80F0A;
+    --white: #fff;
+    --lightred: #B80F0A;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.nav-container {
+    width: 100%;
+    background-color: var(--darkgray);
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 0.2fr auto 1fr;
+    align-items: center;
+    height: 80px;
+    width: 90%;
+    max-width: 1720px;
+    margin: 0 auto;
+}
+
+#navbar-logo {
+    color: #8B0000;
+    justify-self: start;
+    margin-left: 20px;
+    font-size: 36px;
+    font-family: 'Syne Mono', monospace;
+    cursor: pointer;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    list-style: none;
+    text-align: center;
+    width: 70%;
+    justify-self: end;
+    font-size: 29px;
+}
+
+.nav-links {
+    color: white;
+    text-decoration: none;
+    font-family: 'Syne Mono', monospace;
+}
+
+.nav-links:hover {
+    color: var(--brightred);
+    transition: all 0.2s ease-out;
+}
+
+.nav-links-btn {
+    background-color: var(--brightred);
+    padding: 6px 16px;
+    border-radius: 4px;
+}
+
+.nav-links-btn:hover {
+    background-color: transparent;
+    color: var(--white);
+    padding: 5px 15px;
+    border-radius: 4px;
+    border: solid 1px var(--brightred);
+    transition: all 0.3s ease-out;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: var(--white);
+}
+
+@media screen and (max-width: 768px) {
+    .nav-container {
+        position: relative;
+    }
+
+    .nav-menu {
+        display: grid;
+        grid-template-columns: auto;
+        background: var(--brightred);
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: -100;
+        opacity: 0;
+        transition: all 0.5 ease;
+    }
+
+    #navbar-logo {
+        margin-left: 20px;
+    }
+
+    .nav-menu.active {
+        background: var(--darkgray);
+        left: 0;
+        opacity: 1;
+        transition: all 0.5 ease;
+    }
+
+    .nav-links {
+        text-align: center;
+        line-height: 60px;
+        width: 100%;
+        display: table;
+    }
+
+    .nav-links:hover {
+        background-color: var(--brightred);
+        color: var(--white);
+        transition: all 0.4s ease-out;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .nav-links-btn {
+        border: none;
+        padding: 0;
+        border-radius: 0;
+        background-color: var(--darkgray);
+        color: var(--white);
+        transition: all 0.4s ease-out;
+    }
+
+    .nav-links-btn:hover {
+        border: none;
+        padding: 0;
+        border-radius: 0;
+        background-color: var(--brightred);
+        color: var(--white);
+        transition: all 0.4s ease-out;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .menu-toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu-toggle:hover {
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+#CITComegalul {
+    display: flex;
+    flex-direction: column;
+    height: 13269px;
+    width: 90%;
+    border: 2px solid black;
+    margin: auto;
+    background-color: rgba(97, 93, 93, 0.5);
+    box-shadow: inset -5px -5px rgba(250, 238, 238, 0.5);
+    border-radius: 26px;
+    margin-top: 101px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#CITComegalul h1 {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: 'Syne Mono', monospace;
+    font-size: 40px;
+}
+
+#CITComegalul p {
+    margin-top: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-family: 'Syne Mono', monospace;
+}
+
+#img {
+    height: 459px;
+    width: 569px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#img1 {
+    height: 669px;
+    width: 569px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Next {
+    font-size: 25px;
+    background-image: linear-gradient(to top, rgb(0, 0, 0) 0%, #dbd0cf 100%);
+    border: none;
+    width: 30%;
+    bottom: 0;
+    margin: 10% auto 1%;
+    padding-left: 1%;
+    border-radius: 50px;
+    color: rgb(231, 218, 218);
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+    font-family: 'Syne Mono', monospace;
+    float: right;
+}
+
+.Next a {
+    position: relative;
+    z-index: 2;
+    background-image: linear-gradient(to top, #f1ebeb 0%, black 0%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+.Next:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(122, 120, 120);
+    transition: all 0.35s;
+    border-radius: 50px;
+}
+
+.Next:hover {
+    color: #fff;
+}
+
+.Next:hover:after {
+    width: 100%;
+}
+
+.Back
+
+ {
+    font-size: 25px;
+    background-image: linear-gradient(to top, rgb(0, 0, 0) 0%, #dbd0cf 100%);
+    border: none;
+    width: 30%;
+    bottom: 0;
+    margin: 1% auto 1%;
+    padding-right: 1%;
+    border-radius: 50px;
+    color: rgb(231, 218, 218);
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+    font-family: 'Syne Mono', monospace;
+    float: right;
+}
+
+.Back a {
+    position: relative;
+    z-index: 2;
+    background-image: linear-gradient(to top, #f1ebeb 0%, black 0%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+.Back:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(122, 120, 120);
+    transition: all 0.35s;
+    border-radius: 50px;
+}
+
+.Back:hover {
+    color: #fff;
+}
+
+.Back:hover:after {
+    width: 100%;
+}

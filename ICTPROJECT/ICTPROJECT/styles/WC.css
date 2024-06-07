@@ -1,0 +1,71 @@
+#welcome {
+    background-image: url(../images/saradong_kamayn.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#welcome h1{
+    background-color: rgb(92, 9, 9)1;
+    background-image: linear-gradient(to top, black 0%, rgb(192, 11, 11)100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    font-size: 56px;
+    font-family: 'Syne Mono', monospace;  
+    height: 101px;  
+    padding-top: 3px;
+}
+
+.main__btn {
+    font-size: 40px;
+    background-image: linear-gradient(to top, rgb(0, 0, 0) 0%, #b8100a 100%);
+    border: none;
+    border-radius: 4px;
+    color: rgb(56, 4, 4);
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: all 0.35s;
+    outline: none;
+    font-family: 'Syne Mono', monospace;
+    margin-bottom: 20px; 
+    margin-right: 20px;
+}
+
+.main__btn a {
+    position: relative;
+    z-index: 2;
+    background-image: linear-gradient(to top, #B80F0A 0%, black 0%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+.main__btn:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(92, 9, 9);
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+.main__btn:hover {
+    color: #fff;
+}
+
+.main__btn:hover:after {
+    width: 100%;
+}
+
