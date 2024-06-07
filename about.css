@@ -10,7 +10,7 @@ body {
     font-size: 16px;
     display: flex;
     flex-direction: column; 
-    min-height: 120vh; 
+    min-height: 100vh; 
     background-color: black;
 }
 
@@ -42,7 +42,7 @@ section#about {
     width: 80%;
     max-width: 800px; 
     height: auto; 
-    padding: 50px; 
+    padding: 40px; 
     background-color: #000;
     color: #0a0; 
     text-align: center; 
@@ -55,7 +55,7 @@ section#about {
 
  
     position: absolute; 
-    top: 60%; 
+    top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
 }
@@ -105,3 +105,20 @@ footer {
     text-align: center; 
     margin-top: auto;
 }
+.resume {
+    position: relative;
+}
+
+.resume img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25%;
+    height:25%;
+    margin-right: 2%;
+}
+
+.resume-content {
+    margin-top: 2%;
+}
+
