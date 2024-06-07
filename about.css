@@ -10,7 +10,7 @@ body {
     font-size: 16px;
     display: flex;
     flex-direction: column; 
-    min-height: 100vh; 
+    min-height: 120vh; 
     background-color: black;
 }
 
@@ -55,7 +55,7 @@ section#about {
 
  
     position: absolute; 
-    top: 50%; 
+    top: 60%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
 }
