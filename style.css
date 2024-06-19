@@ -86,3 +86,19 @@ footer {
 .class a i {
     margin-right: 5px; 
 }
+
+.classs {
+    text-align: center; 
+    margin-top: 5px; 
+}
+
+.classs a {
+    display: block;
+    margin-bottom: 20px; 
+    color: #0a0; 
+    text-decoration: none; 
+}
+
+.classs a i {
+    margin-right: 5px; 
+}
