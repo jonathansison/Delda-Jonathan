@@ -71,21 +71,6 @@ footer {
     text-align: center; 
     margin-top: auto; 
 }
-.class {
-    text-align: center; 
-    margin-top: 5px; 
-}
-
-.class a {
-    display: block;
-    margin-bottom: 20px; 
-    color: #0a0; 
-    text-decoration: none; 
-}
-
-.class a i {
-    margin-right: 5px; 
-}
 
 .classs {
     text-align: center; 
